@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOON JUNGWOO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-section { 
+            min-height: calc(100vh - 80px); 
+            display: flex; 
+            align-items: center; 
+            background-image: url('home-image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000000;
+        }
+        
+        .hover-primary:hover { color: #003380 !important; transition: all 0.3s ease-in-out; }
+        .active-primary { color: #003380 !important; }
+        
+        .font-serif-display { font-family: 'Bodoni Moda', serif; }
+        .hero-name { 
+            font-weight: 300; 
+            letter-spacing: 0.15em; 
+            text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5); 
+        }
+        .hero-sub { 
+            font-family: 'Bodoni Moda', serif; 
+            font-style: italic; 
+            font-weight: 400; 
+            letter-spacing: 0.05em; 
+            text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4);
+        }
+        .hero-desc { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 300; 
+            letter-spacing: 0.2em; 
+            text-transform: none; 
+            opacity: 1; 
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-3 flex-shrink-0">
+                <!-- MTC 로고 (h-14 유지) -->
+                <img src="mtc-logo.png" alt="MTC Logo" class="h-14 w-auto object-contain">
+                
+                <!-- YOON JUNGWOO.png 이미지 크기를 이전의 80% 수준인 h-5 md:h-7로 조정 -->
+                <a href="0_Home.html" class="flex items-center">
+                    <img src="YOON JUNGWOO.png" alt="YOON JUNGWOO" class="h-5 md:h-7 w-auto object-contain">
+                </a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="0_Home.html" class="active-primary hover-primary transition-all duration-300 uppercase">HOME</a>
+                <a href="1_Profile.html" class="hover-primary transition-all duration-300 uppercase">Profile</a>
+                <a href="2_CV.html" class="hover-primary transition-all duration-300 uppercase">CV</a>
+                <a href="3_Courses.html" class="hover-primary transition-all duration-300 uppercase">Courses</a>
+                <a href="4_Research.html" class="hover-primary transition-all duration-300 uppercase">Research</a>
+                <a href="5_Exhibitions.html" class="hover-primary transition-all duration-300 uppercase">Exhibitions</a>
+                <a href="6_Patents and IP.html" class="hover-primary transition-all duration-300 uppercase">Patents & IP</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section px-6 md:px-16">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="flex flex-col items-start text-left ml-2 md:ml-8">
+                <h1 class="hero-name font-serif-display text-5xl md:text-7xl font-bold leading-tight tracking-tight uppercase text-black">
+                    YOON JUNGWOO
+                </h1>
+                <div class="mt-6 md:mt-8 space-y-1">
+                    <p class="hero-sub text-xl md:text-2xl text-black">
+                        Visual Design
+                    </p>
+                    <p class="hero-desc text-s md:text-sm text-black uppercase mt-8">
+                        Media Technology and Media Contents
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-4xl font-bold">Latest News</h2>
+                <a href="#" class="text-sm border-b border-black pb-1 hover-border-primary transition">View All</a>
+            </div>
+            <div class="space-y-8">
+                <div class="group border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between">
+                    <span class="text-gray-400 text-sm mb-2 md:mb-0">2026. 05. 01</span>
+                    <h4 class="text-xl font-medium group-hover:text-[#003380] transition cursor-pointer">개인 홈페이지를 개설했습니다.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto text-sm text-gray-400">
+            <p>@YOON JUNGWOO</p>
+            <p class="mt-2 uppercase tracking-widest text-[10px]">The Catholic University of Korea, Bucheon, Republic of Korea</p>
+        </div>
+    </footer>
+
+</body>
+</html>
