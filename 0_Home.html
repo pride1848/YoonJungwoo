@@ -15,28 +15,38 @@
             min-height: calc(100vh - 80px); 
             display: flex; 
             align-items: center; 
+            justify-content: center; 
             background-image: url('home-image.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: #000000;
+            position: relative;
         }
         
         .hover-primary:hover { color: #003380 !important; transition: all 0.3s ease-in-out; }
         .active-primary { color: #003380 !important; }
         
         .font-serif-display { font-family: 'Bodoni Moda', serif; }
+        
+        .hero-name-sub { 
+            font-weight: 300; 
+            letter-spacing: 0.15em; 
+            color: #FFFFFF;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15); 
+        }
+        
         .hero-name { 
             font-weight: 300; 
             letter-spacing: 0.15em; 
-            text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5); 
+            text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2); 
         }
+        
         .hero-sub { 
             font-family: 'Bodoni Moda', serif; 
             font-style: italic; 
             font-weight: 400; 
             letter-spacing: 0.05em; 
-            text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4);
         }
         .hero-desc { 
             font-family: 'Inter', sans-serif; 
@@ -44,7 +54,16 @@
             letter-spacing: 0.2em; 
             text-transform: none; 
             opacity: 1; 
-            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+        }
+
+        /* 로고 스타일: 위치 고정, 크기 소폭 축소 및 그림자 유지 */
+        .centered-logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 100%; 
+            margin-bottom: 2rem; 
+            filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.15));
         }
     </style>
 </head>
@@ -52,14 +71,7 @@
 
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <div class="flex items-center gap-3 flex-shrink-0">
-                <!-- MTC 로고 (h-14 유지) -->
-                <img src="mtc-logo.png" alt="MTC Logo" class="h-14 w-auto object-contain">
-                
-                <!-- YOON JUNGWOO.png 이미지 크기를 이전의 80% 수준인 h-5 md:h-7로 조정 -->
-                <a href="0_Home.html" class="flex items-center">
-                    <img src="YOON JUNGWOO.png" alt="YOON JUNGWOO" class="h-5 md:h-7 w-auto object-contain">
-                </a>
+            <div class="flex items-center flex-shrink-0">
             </div>
             
             <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
@@ -75,8 +87,17 @@
     </nav>
 
     <header class="hero-section px-6 md:px-16">
-        <div class="max-w-7xl mx-auto w-full">
-            <div class="flex flex-col items-start text-left ml-2 md:ml-8">
+        <div class="max-w-7xl mx-auto w-full flex flex-col items-center">
+            <div class="flex flex-col items-start text-left relative">
+                
+                <!-- 로고: h-28에서 h-24로 살짝 축소 -->
+                <div class="centered-logo">
+                    <img src="mtc-logo.png" alt="MTC Logo" class="h-20 md:h-24 w-auto object-contain">
+                </div>
+
+                <h2 class="hero-name-sub font-serif-display text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-4">
+                    Jungwoo Christine Yoon
+                </h2>
                 <h1 class="hero-name font-serif-display text-5xl md:text-7xl font-bold leading-tight tracking-tight uppercase text-black">
                     YOON JUNGWOO
                 </h1>
