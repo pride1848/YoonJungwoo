@@ -72,20 +72,15 @@
 </head>
 
 <body class="bg-white text-gray-900">
-    <!-- 통합 상단바 적용 -->
+    <!-- 수정된 통합 상단바: 모바일 화면 대응 및 일관된 간격 유지 -->
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-20 flex justify-between items-center">
             <div class="flex items-center gap-3 flex-shrink-0">
-                <!-- MTC 로고 -->
-                <img src="mtc-logo.png" alt="MTC Logo" class="h-14 w-auto object-contain">
-                
-                <!-- YOON JUNGWOO 이미지 로고 -->
-                <a href="0_Home.html" class="flex items-center">
-                    <img src="YOON JUNGWOO.png" alt="YOON JUNGWOO" class="h-5 md:h-7 w-auto object-contain">
-                </a>
+                <!-- 왼쪽 상단 영역 비움 -->
             </div>
             
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+            <!-- 모바일 창에서도 링크가 보이고 부드럽게 넘어가도록 구조 수정 -->
+            <div class="flex space-x-4 md:space-x-8 text-[11px] md:text-sm font-medium text-gray-600 overflow-x-auto whitespace-nowrap scrollbar-none py-2">
                 <a href="0_Home.html" class="hover-primary transition-all duration-300 uppercase">HOME</a>
                 <a href="1_Profile.html" class="hover-primary transition-all duration-300 uppercase">Profile</a>
                 <a href="2_CV.html" class="hover-primary transition-all duration-300 uppercase">CV</a>
@@ -149,7 +144,7 @@
                         <span class="text-sm text-gray-400 ml-auto">2010 - 2026 | Spring</span>
                     </div>
                     <div>
-                        <p class="description-ko">학생들이 디지털 미디어와 사회를 둘러싼 문화에 대한 심도 있고 깊이 있는 이해를 통해 미래에 대한 비전을 발전시키고 창의적 사고력을 향상시키는 데 중점을 둔다. 강의, 토론, 발표, 프로젝트 등을 통해 학생들은 미디어와 문화의 과거, 현재, 그리고 미래에 대한 지식을 습득할 수 있다.</p>
+                        <p class="description-ko">학생들이 디지털 미디어와 사회를 둘러싼 문화에 대한 심도 있고 깊이 있는 이해를 통해 미래에 대한 비전을 발전시키고 창의적 사고력을 향상시키는 데 중점을 둔다. 강의, 토론, 발표, 프로젝트 등을 통해 학생들은 미디어와 문화의 과거, 현재, 그리고 미래에 대한 지식을 습득할 수 "있다.</p>
                         <p class="description-en">This course focuses on helping students develop future visions and improve creative thinking skills through a thorough and deep understanding of the culture surrounding digital media and society. Through lectures, discussions, presentations, and projects, students acquire knowledge about the past, present, and future of media and culture.</p>
                     </div>
                 </div>

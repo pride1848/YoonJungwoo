@@ -71,20 +71,15 @@
 </head>
 
 <body class="bg-white text-gray-900">
-    <!-- 통합 상단바 적용 -->
+    <!-- 수정된 통합 상단바: 모바일 창 잘림 해결 및 반응형 가로 스크롤 레이아웃 적용 -->
     <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-20 flex justify-between items-center">
             <div class="flex items-center gap-3 flex-shrink-0">
-                <!-- MTC 로고 -->
-                <img src="mtc-logo.png" alt="MTC Logo" class="h-14 w-auto object-contain">
-                
-                <!-- YOON JUNGWOO 이미지 로고 -->
-                <a href="0_Home.html" class="flex items-center">
-                    <img src="YOON JUNGWOO.png" alt="YOON JUNGWOO" class="h-5 md:h-7 w-auto object-contain">
-                </a>
+                <!-- 왼쪽 상단 영역 비움 -->
             </div>
             
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+            <!-- 모바일 레이아웃 최적화: 가로 스크롤 메뉴 구성 보완 -->
+            <div class="flex space-x-4 md:space-x-8 text-[11px] md:text-sm font-medium text-gray-600 overflow-x-auto whitespace-nowrap scrollbar-none py-2">
                 <a href="0_Home.html" class="hover-primary transition-all duration-300 uppercase">HOME</a>
                 <a href="1_Profile.html" class="hover-primary transition-all duration-300 uppercase">Profile</a>
                 <a href="2_CV.html" class="hover-primary transition-all duration-300 uppercase">CV</a>
