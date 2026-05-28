@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOON JUNGWOO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-section { 
+            min-height: calc(100vh - 80px); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background-image: url('home-image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #000000;
+            position: relative;
+        }
+        
+        .hover-primary:hover { color: #003380 !important; transition: all 0.3s ease-in-out; }
+        .active-primary { color: #003380 !important; }
+        
+        .font-serif-display { font-family: 'Bodoni Moda', serif; }
+        
+        .hero-name-sub { 
+            font-weight: 300; 
+            letter-spacing: 0.15em; 
+            color: #FFFFFF;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15); 
+        }
+        
+        /* 새로운 스타일: 기존 hero-name-sub과 완벽히 동일하나 그림자(text-shadow)만 제거 */
+        .hero-name-no-shadow {
+            font-weight: 300; 
+            letter-spacing: 0.15em; 
+            color: #FFFFFF;
+        }
+        
+        .hero-name { 
+            font-weight: 300; 
+            letter-spacing: 0.15em; 
+            text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.2); 
+        }
+        
+        .hero-sub { 
+            font-family: 'Bodoni Moda', serif; 
+            font-style: italic; 
+            font-weight: 400; 
+            letter-spacing: 0.05em; 
+        }
+        .hero-desc { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 300; 
+            letter-spacing: 0.2em; 
+            text-transform: none; 
+            opacity: 1; 
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+        <!-- pr-6 md:pr-24를 적용해 우측 끝에서 자연스럽게 살짝 떨어지도록 조정했습니다. -->
+        <div class="w-full pr-6 md:pr-24 h-20 flex justify-end items-center">
+            <div class="flex items-center flex-shrink-0">
+            </div>
+            
+            <div class="flex space-x-4 md:space-x-8 text-[11px] md:text-sm font-medium text-gray-600 overflow-x-auto whitespace-nowrap scrollbar-none py-2">
+                <a href="Home.html" class="active-primary hover-primary transition-all duration-300 uppercase">HOME</a>
+                <a href="1_Profile.html" class="hover-primary transition-all duration-300 uppercase">Profile</a>
+                <a href="2_CV.html" class="hover-primary transition-all duration-300 uppercase">CV</a>
+                <a href="3_Courses.html" class="hover-primary transition-all duration-300 uppercase">Courses</a>
+                <a href="4_Research.html" class="hover-primary transition-all duration-300 uppercase">Research</a>
+                <a href="5_Exhibitions.html" class="hover-primary transition-all duration-300 uppercase">Exhibitions</a>
+                <a href="6_Patents and IP.html" class="hover-primary transition-all duration-300 uppercase">Patents & IP</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section px-6 md:px-16">
+        <div class="max-w-7xl mx-auto w-full flex flex-col items-center">
+            <div class="flex flex-col items-center text-center relative w-full">
+
+                <!-- 이름 위치 고정 (whitespace-nowrap 및 서체 스타일 유지) -->
+                <h2 class="hero-name-no-shadow font-serif-display text-3xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight mb-4 whitespace-nowrap">
+                    Jungwoo Christine Yoon
+                </h2>
+                
+                <!-- 상단 여백을 mt-6 md:mt-8에서 mt-2 md:mt-4로 줄여 Visual Design을 살짝 올림 -->
+                <div class="mt-2 md:mt-4 space-y-1 w-full">
+                    <!-- 모바일 창에 맞춰서 크기를 text-base로 축소 조절 (PC 환경에서는 md:text-2xl 유지) -->
+                    <p class="hero-sub text-base sm:text-xl md:text-2xl" style="color: #a0a0a0;">
+                        Visual Design
+                    </p>
+                    <!-- 상단 여백을 mt-8에서 mt-4로 줄여 Media Technology...를 살짝 올림 -->
+                    <p class="hero-desc text-[9px] sm:text-[10px] md:text-xs uppercase mt-4 whitespace-nowrap" style="color: #a0a0a0;">
+                        Media Technology and Media Contents
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-4xl font-bold">Latest News</h2>
+                <a href="#" class="text-sm border-b border-black pb-1 hover-border-primary transition">View All</a>
+            </div>
+            <div class="space-y-8">
+                <div class="group border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between">
+                    <span class="text-gray-400 text-sm mb-2 md:mb-0">2026. 05. 01</span>
+                    <h4 class="text-xl font-medium group-hover:text-[#003380] transition cursor-pointer">개인 홈페이지를 개설했습니다.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t border-gray-100 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto text-sm text-gray-400">
+            <p>@YOON JUNGWOO</p>
+            <p class="mt-2 uppercase tracking-widest text-[10px]">The Catholic University of Korea, Bucheon, Republic of Korea</p>
+        </div>
+    </footer>
+
+</body>
+</html>
